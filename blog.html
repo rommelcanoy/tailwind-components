@@ -9,9 +9,9 @@
 
   <body>
     <div class="h-screen bg-gray-200">
-      <section class="body-font mx-auto max-w-screen-md text-gray-600">
-        <div class="container mx-auto flex flex-col gap-4 py-24">
-          <nav class="flex mb-2" aria-label="Breadcrumb">
+      <section class="body-font mx-auto max-w-screen-md text-gray-600  h-full">
+        <div class="container mx-auto flex flex-col gap-4 py-16  h-full">
+          <nav class="mb-2 flex" aria-label="Breadcrumb">
             <ol class="inline-flex items-center space-x-1 md:space-x-3">
               <li class="inline-flex items-center">
                 <a href="#" class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600">
@@ -48,7 +48,7 @@
               <input type="search" name="Search" placeholder="Search..." class="flex-1 rounded-md py-4 pl-10 pr-28 text-sm focus:outline-none sm:w-auto" />
             </div>
           </fieldset>
-          <div class="grid grid-cols-1 gap-4">
+          <div class="grid grid-cols-1 gap-4 ">
             <div class="">
               <div class="shadow-cla-blue flex h-full items-center overflow-hidden rounded-xl bg-white p-8">
                 <div class="mr-8">
@@ -90,6 +90,44 @@
               </div>
             </div>
           </div>
+
+          <div class="flex-1"></div>
+
+          <nav aria-label="Page navigation" class="flex justify-center justify-self-end ">
+            <ul class="flex h-8 items-center -space-x-px text-sm">
+              <li>
+                <a href="#" class="ml-0 flex h-8 items-center justify-center rounded-l-lg border border-gray-300 bg-white px-3 leading-tight text-gray-500 hover:bg-gray-100 hover:text-gray-700">
+                  <span class="sr-only">Previous</span>
+                  <svg class="h-2.5 w-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="flex h-8 items-center justify-center border border-gray-300 bg-white px-3 leading-tight text-gray-500 hover:bg-gray-100 hover:text-gray-700">1</a>
+              </li>
+              <li>
+                <a href="#" class="flex h-8 items-center justify-center border border-gray-300 bg-white px-3 leading-tight text-gray-500 hover:bg-gray-100 hover:text-gray-700">2</a>
+              </li>
+              <li>
+                <a href="#" aria-current="page" class="z-10 flex h-8 items-center justify-center border border-blue-300 bg-blue-50 px-3 leading-tight text-blue-600 hover:bg-blue-100 hover:text-blue-700">3</a>
+              </li>
+              <li>
+                <a href="#" class="flex h-8 items-center justify-center border border-gray-300 bg-white px-3 leading-tight text-gray-500 hover:bg-gray-100 hover:text-gray-700">4</a>
+              </li>
+              <li>
+                <a href="#" class="flex h-8 items-center justify-center border border-gray-300 bg-white px-3 leading-tight text-gray-500 hover:bg-gray-100 hover:text-gray-700">5</a>
+              </li>
+              <li>
+                <a href="#" class="flex h-8 items-center justify-center rounded-r-lg border border-gray-300 bg-white px-3 leading-tight text-gray-500 hover:bg-gray-100 hover:text-gray-700">
+                  <span class="sr-only">Next</span>
+                  <svg class="h-2.5 w-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </section>
     </div>
