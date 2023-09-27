@@ -9,15 +9,52 @@
 
   <body>
     <div class="h-screen bg-gray-200">
-      <section class="body-font text-gray-600">
-        <div class="container mx-auto py-24">
-          <div class="grid grid-cols-1">
-            <div class="p-4">
-              <div class="shadow-cla-blue flex h-full items-center overflow-hidden rounded-xl bg-white">
-                <div class="p-8">
-                  <img class="rounded-xl object-cover object-center transition-all hover:scale-100 md:h-24 lg:h-36" src="https://images.unsplash.com/photo-1618172193622-ae2d025f4032?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80" alt="blog" />
+      <section class="body-font mx-auto max-w-screen-md text-gray-600">
+        <div class="container mx-auto flex flex-col gap-4 py-24">
+          <nav class="flex mb-2" aria-label="Breadcrumb">
+            <ol class="inline-flex items-center space-x-1 md:space-x-3">
+              <li class="inline-flex items-center">
+                <a href="#" class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600">
+                  <svg class="mr-2.5 h-3 w-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z" />
+                  </svg>
+                  Home
+                </a>
+              </li>
+              <li aria-current="page">
+                <div class="flex items-center">
+                  <svg class="mx-1 h-3 w-3 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4" />
+                  </svg>
+                  <span class="ml-1 text-sm font-medium text-gray-500 md:ml-2">News</span>
                 </div>
-                <div class="flex-1 pr-8">
+              </li>
+            </ol>
+          </nav>
+
+          <fieldset class="flex w-full">
+            <label for="Search" class="hidden">Search</label>
+            <div class="relative flex flex-1">
+              <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+                <button type="button" title="search" class="p-1 focus:outline-none focus:ring">
+                  <svg fill="currentColor" viewBox="0 0 512 512" class="h-4 w-4">
+                    <path d="M479.6,399.716l-81.084-81.084-62.368-25.767A175.014,175.014,0,0,0,368,192c0-97.047-78.953-176-176-176S16,94.953,16,192,94.953,368,192,368a175.034,175.034,0,0,0,101.619-32.377l25.7,62.2L400.4,478.911a56,56,0,1,0,79.2-79.195ZM48,192c0-79.4,64.6-144,144-144s144,64.6,144,144S271.4,336,192,336,48,271.4,48,192ZM456.971,456.284a24.028,24.028,0,0,1-33.942,0l-76.572-76.572-23.894-57.835L380.4,345.771l76.573,76.572A24.028,24.028,0,0,1,456.971,456.284Z"></path>
+                  </svg>
+                </button>
+              </span>
+              <span class="absolute inset-y-0 right-3 flex items-center pl-2">
+                <button type="button" class="w-full rounded-lg bg-blue-600 px-4 py-1 text-center text-base font-semibold text-white shadow-md transition duration-200 ease-in hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-indigo-200">Search</button>
+              </span>
+              <input type="search" name="Search" placeholder="Search..." class="flex-1 rounded-md py-4 pl-10 pr-28 text-sm focus:outline-none sm:w-auto" />
+            </div>
+          </fieldset>
+          <div class="grid grid-cols-1 gap-4">
+            <div class="">
+              <div class="shadow-cla-blue flex h-full items-center overflow-hidden rounded-xl bg-white p-8">
+                <div class="mr-8">
+                  <img class="w-48 rounded-xl object-cover object-center transition-all hover:scale-100 md:h-24 lg:h-36" src="https://images.unsplash.com/photo-1618172193622-ae2d025f4032?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80" alt="blog" />
+                </div>
+                <div class="flex-1">
                   <div class="">
                     <h2 class="title-font mb-1 text-xs font-medium tracking-widest text-gray-400">September 27th, 2023</h2>
                     <h1 class="title-font mb-3 text-lg font-medium text-gray-600">Sanford Luverne adds new 3D mammography technology</h1>
@@ -25,6 +62,29 @@
                   </div>
                   <div class="flex flex-wrap items-center">
                     <button class="shadow-cla-blue rounded-lg bg-blue-500 px-4 py-1 text-white hover:scale-105">Read more</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="">
+              <div class="shadow-cla-blue flex h-full items-center overflow-hidden rounded-xl bg-white p-8">
+                <div class="mr-8">
+                  <div role="status" class="flex w-48 animate-pulse items-center justify-center rounded-xl bg-gray-300 md:h-24 lg:h-36">
+                    <svg class="h-10 w-10 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 20">
+                      <path d="M5 5V.13a2.96 2.96 0 0 0-1.293.749L.879 3.707A2.98 2.98 0 0 0 .13 5H5Z" />
+                      <path d="M14.066 0H7v5a2 2 0 0 1-2 2H0v11a1.97 1.97 0 0 0 1.934 2h12.132A1.97 1.97 0 0 0 16 18V2a1.97 1.97 0 0 0-1.934-2ZM9 13a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-2a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2Zm4 .382a1 1 0 0 1-1.447.894L10 13v-2l1.553-1.276a1 1 0 0 1 1.447.894v2.764Z" />
+                    </svg>
+                    <span class="sr-only">Loading...</span>
+                  </div>
+                </div>
+                <div class="flex-1">
+                  <div class="">
+                    <h2 class="title-font mb-2 h-6 animate-pulse rounded-xl bg-gray-300 text-xs font-medium tracking-widest text-gray-400"></h2>
+                    <h2 class="title-font mb-2 h-6 animate-pulse rounded-xl bg-gray-300 text-xs font-medium tracking-widest text-gray-400"></h2>
+                    <p class="mb-3 h-6 animate-pulse rounded-xl bg-gray-300 leading-relaxed"></p>
+                  </div>
+                  <div class="flex flex-wrap items-center">
+                    <button class="h-6 w-24 animate-pulse rounded-xl bg-gray-300"></button>
                   </div>
                 </div>
               </div>
